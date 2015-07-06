@@ -15,3 +15,16 @@ console.log( "5 < 12 is " + (5 < 12) ); //true
 console.log( "5 <= 12 is " + (5 <= 12) ); //true
 console.log( "5 > 12 is " + (5 > 12)); //false
 console.log( "5 >= 12 is " + (5 >= 12)); //false
+
+
+var password = "monkeybrains"
+userGuess = prompt("Please enter your password:");
+
+if (userGuess === password)
+{
+  alert("Good job!")
+}
+else
+{
+  alert("Incorrect password.")
+}
