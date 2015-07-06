@@ -5,12 +5,14 @@
     <script type="text/javascript" src="global.js"></script>
   </head>
   <body>
+    <h1>6A</h1>
     <h2>What do you call true and false values?</h2>
     <p>Booleans</p>
     
     <h2>How is true similar or dissimilar from "true"? Can they be used in the same way?</h2>
     <p>Without quotes true is a boolean value and with quotes "true" is a string.</p>
     
+    <h1>6B</h1>
     <h2>Does it matter if the user-provided password matches your password exactly, or is there some flexibility allowed in capitalization?</h2>
     <p>The password is case sensitive.</p>
     
@@ -19,5 +21,29 @@
     
     <h2>Why is it a bad idea to store a password (or other sensitive information) in plain text in a Javascript file?</h2>
     <p>If the password is stored in plain text anyone can search through the source to easily find it.</p>
+    
+    <h1>6C</h1>
+    <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+    <p>When collected as a string, the only time the userNumber matched the secretNumber was with the ==. The secretNumber is stored as a number and the double equal (==) is the only operator that allows us to compare unlike types.</p>
+    
+    <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?
+What is the difference between == and ===?</h2>
+    <p>Both worked in the cases of entering the number correctly, not entering the number correctly and not entering a number at all. Because the secretNumber does not have quotes around it, it is stored as a number. The triple equal (===) works because it comparing the same type and the double equal (==) works because it does not require the two values to be of the same type.</p>
+    
+    <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+    <p>I think it makes more sense to leave the user's guess as a string in case it is a combination of both letters and numbers.</p>
+    
+    <h1>6D</h1>
+    <h2>Does it matter what order your if-statements are in?</h2>
+    <p>No, because it checks to see each one applies.</p>
+    
+    <h2>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h2>
+    <p>I used && to check if the age was between 0 and 15. I don't think either is necessarily a better choice.</p>
+    
+    <h2>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h2>
+    <p>I used Number() rather that parsInt(), and everything entered that is not an integer comes back as NaN.</p>
+    
+    <h2>What questions do you have?</h2>
+    <p></p>
   </body>
 </html>
