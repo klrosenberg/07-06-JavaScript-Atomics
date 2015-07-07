@@ -4,4 +4,4 @@ userGuess = prompt("Please enter your password:");
 do{
   userGuess = prompt("Please enter your password:")
 }
-while (userGuess != password)
+while (userGuess !== password)
