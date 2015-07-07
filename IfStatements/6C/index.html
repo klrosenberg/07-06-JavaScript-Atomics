@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>If Statements</title>
+    <script type="text/javascript" src="global.js"></script>
+  </head>
+  <body>
+    <h1>6C</h1>
+    <h2>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h2>
+    <p>When collected as a string, the only time the userNumber matched the secretNumber was with the ==. The secretNumber is stored as a number and the double equal (==) is the only operator that allows us to compare unlike types.</p>
+    
+    <h2>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?
+What is the difference between == and ===?</h2>
+    <p>Both worked in the cases of entering the number correctly, not entering the number correctly and not entering a number at all. Because the secretNumber does not have quotes around it, it is stored as a number. The triple equal (===) works because it comparing the same type and the double equal (==) works because it does not require the two values to be of the same type.</p>
+    
+    <h2>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h2>
+    <p>I think it makes more sense to leave the user's guess as a string in case it is a combination of both letters and numbers.</p>
+  </body>
+</html>
