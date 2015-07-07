@@ -43,35 +43,64 @@ console.log( "5 >= 12 is " + (5 >= 12)); //false
 //   alert("Guess does not match secret number.")
 // }
 
+// userAge = prompt("How old are you?")
+// userAge = Number(userAge)
+//
+// if (userAge >= 25)
+// {
+//   alert("You can rent a car.")
+// }
+//
+// if (userAge >= 21)
+// {
+//   alert("Please don't drink and drive.")
+// }
+//
+// if (userAge >= 16)
+// {
+//   alert("You are eligible for a driver's license.")
+// }
+//
+// if (0 <= userAge && userAge <= 15)
+// {
+//   alert("You can't drive yet, but you'll be able to in a few years.")
+// }
+//
+// if (userAge < 0)
+// {
+//   alert("You haven't been born yet.")
+// }
+//
+// if (isNaN(userAge))
+// {
+//   alert("Sorry that is not a number.")
+// }
+
 userAge = prompt("How old are you?")
 userAge = Number(userAge)
 
-if (userAge >= 25)
-{
+if (userAge >= 25) {
   alert("You can rent a car.")
-}
+} 
 
-if (userAge >= 21)
-{
+else if (userAge >= 21 && userAge <= 24) {
   alert("Please don't drink and drive.")
-}
+} 
 
-if (userAge >= 16)
-{
-  alert("You are eligible for a driver's license.")
-}
+else if (userAge >= 16 && userAge <= 20) {
+  alert("You're eligible for a driver's license")
+} 
 
-if (0 <= userAge && userAge <= 15)
-{
-  alert("You can't drive yet, but you'll be able to in a few years.")
-}
+else if (userAge >= 0 && userAge <= 15) {
+  alert("You can't drive yet, but you'll be able to in a few years")
+} 
 
-if (userAge < 0)
-{
+else if (userAge < 0) {
   alert("You haven't been born yet.")
+} 
+
+else if (isNaN(userAge) == true) {
+  alert("Sorry, but that's not a number.")
 }
 
-if (isNaN(userAge))
-{
-  alert("Sorry that is not a number.")
-}
+
